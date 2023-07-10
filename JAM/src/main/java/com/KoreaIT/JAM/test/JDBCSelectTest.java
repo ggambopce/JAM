@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.KoreaIT.JAM.Article;
 
 public class JDBCSelectTest {
 
@@ -73,5 +74,4 @@ public class JDBCSelectTest {
 		}
 		System.out.println("결과 : " + articles);
 	}
-	
 }
