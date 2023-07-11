@@ -1,6 +1,6 @@
 package exception;
 
-public class SQLErrorException extends RuntimeException{
+public class SQLErrorException extends RuntimeException {
 	
 	private Exception origin;
 
