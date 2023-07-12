@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Article {
 	public int id;
-	public LocalDateTime  regDate;
+	public LocalDateTime regDate;
 	public LocalDateTime updateDate;
 	public String title;
 	public String body;
@@ -20,6 +20,9 @@ public class Article {
 
 	@Override
 	public String toString() {
-		return "Article [id=" + id + ", regDate=" + regDate + ", updateDate=" + updateDate + ", title=" + title	+ ", body=" + body + "]";
+		return "Article [id=" + id + ", regDate=" + regDate + ", updateDate=" + updateDate + ", title=" + title
+				+ ", body=" + body + "]";
 	}
+
+
 }
