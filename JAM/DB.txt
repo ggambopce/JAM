@@ -15,6 +15,9 @@ CREATE TABLE article(
 # article 테이블에 회원번호 컬럼 추가
 ALTER TABLE article ADD COLUMN memberId INT UNSIGNED NOT NULL AFTER updateDate;
 
+# article 테이블에 조회수 컬럼 추가
+ALTER TABLE article ADD COLUMN vCnt INT UNSIGNED NOT NULL;
+
 # member 테이블 생성
 CREATE TABLE `member`(
 	id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -34,7 +37,8 @@ SET regDate = NOW(),
 updateDate = NOW(),
 memberId = 1,
 title = CONCAT('제목', RAND()),
-`body` = CONCAT('내용', RAND());
+`body` = CONCAT('내용', RAND()),
+vCnt = 5;
 
 # member 테스트 데이터
 INSERT INTO `member`
