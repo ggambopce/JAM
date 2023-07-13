@@ -29,6 +29,11 @@ public class App {
 				System.out.printf("명령어) ");
 				String cmd = sc.nextLine().trim();
 
+				if (cmd.equals("exit")) {
+					System.out.println("== 프로그램 종료 ==");
+					break;
+				}
+				
 				if (cmd.equals("member join")) {
 					memberController.doJoin();
 				} else if (cmd.equals("member login")) {
@@ -51,10 +56,6 @@ public class App {
 					System.out.println("존재하지 않는 명령어입니다");
 					continue;				}
 
-				if (cmd.equals("exit")) {
-					System.out.println("== 프로그램 종료 ==");
-					break;
-				}
 			}
 			
 		} catch (ClassNotFoundException e) {
